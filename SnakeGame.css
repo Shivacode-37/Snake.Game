@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("Images/sanke.jpg") no-repeat;
+    min-height: 100vh;
+    background-size:100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(103, 103, 218),rgb(105, 195, 220));
+    height: 92vmin;
+    width: 92vmin;
+    border: 2px solid rgb(143, 126, 238);
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+
+#scoreBox{
+    position: absolute;
+    top:9px;
+    right:200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.head{
+    background:linear-gradient(red,yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background:linear-gradient(rgb(245, 240, 77),rgb(248, 122, 20));
+    border:.25vmin solid black;
+    border-radius: 8px;
+}
